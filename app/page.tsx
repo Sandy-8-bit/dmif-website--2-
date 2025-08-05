@@ -286,7 +286,7 @@ export default function DMIFWebsite() {
         <div className="container py-10 mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-6 text-sm px-4 py-2 bg-blue-100 text-blue-800 border-blue-200">
+              <Badge className="mb-6 text-sm px-4 py-2 hover:bg-blue-100 bg-blue-100 text-blue-800 border-blue-200">
                 Student to Inventor to Entrepreneur
               </Badge>
               <h1 className="text-4xl md:text-7xl font-bold mb-8 leading-tight">
@@ -362,7 +362,7 @@ export default function DMIFWebsite() {
                 />
               </div>
               <div>
-                <Badge className="mb-4 bg-green-100 text-green-800">Founder & Mentor</Badge>
+                <Badge className="mb-4 bg-green-100 hover:bg-green-100  text-green-800">Founder & Mentor</Badge>
                 <h3 className="text-3xl font-bold mb-6">Dr. Madhan</h3>
                 <div className="space-y-4 text-gray-600">
                   <p>
@@ -453,7 +453,7 @@ export default function DMIFWebsite() {
                 <div className="grid lg:grid-cols-2 gap-12">
                   <div>
                     <div className="mb-8">
-                      <Badge className="mb-4 bg-orange-100 text-orange-800">The Innovation Engine</Badge>
+                      <Badge className="mb-4 hover:bg-orange-100 bg-orange-100 text-orange-800">The Innovation Engine</Badge>
                       <h3 className="text-3xl font-bold mb-4">Patent Track</h3>
                       <p className="text-lg text-gray-600 mb-6">
                         Transform your ideas into intellectual property with patent-ready documentation and startup
@@ -504,7 +504,7 @@ export default function DMIFWebsite() {
                 <div className="grid lg:grid-cols-2 gap-12">
                   <div>
                     <div className="mb-8">
-                      <Badge className="mb-4 bg-green-100 text-green-800">The Scholarly Explorer</Badge>
+                      <Badge className="mb-4 hover:bg-green-100 bg-green-100 text-green-800">The Scholarly Explorer</Badge>
                       <h3 className="text-3xl font-bold mb-4">Research Track</h3>
                       <p className="text-lg text-gray-600 mb-6">
                         Develop publication-ready research papers for IEEE, Springer, and ACM conferences with
@@ -1090,7 +1090,7 @@ export default function DMIFWebsite() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <Badge className="mb-6 text-sm px-4 py-2 bg-blue-100 text-blue-800 border-blue-200">
+              <Badge className="mb-6 text-sm px-4 py-2 hover:bg-blue-100 bg-blue-100 text-blue-800 border-blue-200">
                 Applications Open
               </Badge>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">Apply Now</h2>

@@ -283,20 +283,20 @@ export default function DMIFWebsite() {
         id="home"
         className="pt-16 bg-gradient-to-br from-blue-50 via-white to-green-50 min-h-screen flex items-center"
       >
-        <div className="container mx-auto px-4">
+        <div className="container py-10 mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <Badge className="mb-6 text-sm px-4 py-2 bg-blue-100 text-blue-800 border-blue-200">
-                Transforming Students into Innovators
+                Student to Inventor to Entrepreneur
               </Badge>
               <h1 className="text-4xl md:text-7xl font-bold mb-8 leading-tight">
-                From Student to{" "}
+                Dr Madhan {" "}
                 <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-                  Inventor
+                  Institute
                 </span>{" "}
-                to{" "}
+                of{" "}
                 <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-                  Entrepreneur
+                  Technology
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
@@ -379,7 +379,7 @@ export default function DMIFWebsite() {
                       <div className="text-sm text-gray-500">Students Mentored</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-green-600">200+</div>
+                      <div className="text-2xl font-bold text-green-600">127+</div>
                       <div className="text-sm text-gray-500">Patents Filed</div>
                     </div>
                     <div className="text-center">
@@ -443,14 +443,11 @@ export default function DMIFWebsite() {
             </div>
 
             <Tabs defaultValue="patent" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 mb-12">
-                <TabsTrigger value="patent" className="text-lg py-3">
-                  Patent Track
-                </TabsTrigger>
-                <TabsTrigger value="research" className="text-lg py-3">
-                  Research Track
-                </TabsTrigger>
+                            <TabsList className="grid w-full grid-cols-2 mb-12">
+                <TabsTrigger value="patent">Patent Track</TabsTrigger>
+                <TabsTrigger value="research">Research Track</TabsTrigger>
               </TabsList>
+
 
               <TabsContent value="patent">
                 <div className="grid lg:grid-cols-2 gap-12">

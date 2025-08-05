@@ -205,15 +205,6 @@ export default function DMIFWebsite() {
               <a href="#programs" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Programs
               </a>
-              <a href="#why-it-matters" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Why It Matters
-              </a>
-              <a href="#outcomes" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Outcomes
-              </a>
-              <a href="#testimonials" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Testimonials
-              </a>
               <a href="#apply" className="text-gray-700 hover:text-blue-600 transition-colors">
                 Apply
               </a>
@@ -249,15 +240,7 @@ export default function DMIFWebsite() {
                 <a href="#programs" className="block px-3 py-2 text-gray-700 hover:text-blue-600">
                   Programs
                 </a>
-                <a href="#why-it-matters" className="block px-3 py-2 text-gray-700 hover:text-blue-600">
-                  Why It Matters
-                </a>
-                <a href="#outcomes" className="block px-3 py-2 text-gray-700 hover:text-blue-600">
-                  Outcomes
-                </a>
-                <a href="#testimonials" className="block px-3 py-2 text-gray-700 hover:text-blue-600">
-                  Testimonials
-                </a>
+
                 <a href="#apply" className="block px-3 py-2 text-gray-700 hover:text-blue-600">
                   Apply
                 </a>
@@ -290,7 +273,7 @@ export default function DMIFWebsite() {
                 Student to Inventor to Entrepreneur
               </Badge>
               <h1 className="text-4xl md:text-7xl font-bold mb-8 leading-tight">
-                Dr Madhan {" "}
+                Dr. Madhan {" "}
                 <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
                   Institute
                 </span>{" "}
@@ -356,7 +339,7 @@ export default function DMIFWebsite() {
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
               <div>
                 <img
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/image.JPG"
                   alt="Dr. Madhan"
                   className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
                 />
@@ -373,21 +356,21 @@ export default function DMIFWebsite() {
                     His unique methodology transforms theoretical knowledge into practical intellectual property,
                     creating a bridge between academic excellence and entrepreneurial success.
                   </p>
-                  <div className="grid grid-cols-2 gap-4 mt-8">
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-blue-600">500+</div>
-                      <div className="text-sm text-gray-500">Students Mentored</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-green-600">127+</div>
+                  <div className="grid grid-cols-2 gap-4 mt-8">                    <div className="text-center">
+                      <div className="text-2xl font-bold text-green-600">120+</div>
                       <div className="text-sm text-gray-500">Patents Filed</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-purple-600">50+</div>
+                      <div className="text-2xl font-bold text-blue-600">95+</div>
+                      <div className="text-sm text-gray-500">Grants</div>
+                    </div>
+
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-purple-600">6</div>
                       <div className="text-sm text-gray-500">Startups Launched</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-orange-600">15+</div>
+                      <div className="text-2xl font-bold text-orange-600">23+</div>
                       <div className="text-sm text-gray-500">Years Experience</div>
                     </div>
                   </div>
@@ -555,403 +538,6 @@ export default function DMIFWebsite() {
         </div>
       </section>
 
-      {/* Why It Matters Section */}
-      <section id="why-it-matters" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">Why It Matters</h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                In an AI-driven world, human creativity and intellectual property are your competitive advantage
-              </p>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-12 mb-16">
-              <Card className="bg-gradient-to-br from-blue-50 to-purple-50 border-blue-200">
-                <CardContent className="p-8">
-                  <Brain className="w-12 h-12 text-blue-600 mb-4" />
-                  <h3 className="text-2xl font-bold mb-4">The Creative Economy</h3>
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <span>Global IP market value</span>
-                      <span className="font-bold text-blue-600">$6.6 Trillion</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span>Patent applications annually</span>
-                      <span className="font-bold text-blue-600">3.4 Million</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span>Research publications yearly</span>
-                      <span className="font-bold text-blue-600">2.5 Million</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span>Innovation job growth</span>
-                      <span className="font-bold text-blue-600">+15% annually</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-gradient-to-br from-green-50 to-yellow-50 border-green-200">
-                <CardContent className="p-8">
-                  <Zap className="w-12 h-12 text-green-600 mb-4" />
-                  <h3 className="text-2xl font-bold mb-4">AI vs Human Creativity</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>AI can process data, humans create meaning</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Patents require human inventorship</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Research needs human insight and ethics</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Innovation requires human problem-solving</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="mb-16">
-              <h3 className="text-3xl font-bold text-center mb-8">Career Comparison</h3>
-              <Card>
-                <CardContent className="p-0">
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead className="w-1/3">Career Path</TableHead>
-                        <TableHead>Traditional Graduate</TableHead>
-                        <TableHead>DMIF Graduate</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      <TableRow>
-                        <TableCell className="font-medium">Starting Position</TableCell>
-                        <TableCell>Entry-level employee</TableCell>
-                        <TableCell className="text-green-600 font-medium">Co-inventor/Co-author</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="font-medium">Portfolio</TableCell>
-                        <TableCell>Academic transcripts</TableCell>
-                        <TableCell className="text-green-600 font-medium">Patents + Publications</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="font-medium">Network</TableCell>
-                        <TableCell>Classmates</TableCell>
-                        <TableCell className="text-green-600 font-medium">Industry mentors</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="font-medium">Opportunities</TableCell>
-                        <TableCell>Job applications</TableCell>
-                        <TableCell className="text-green-600 font-medium">Startup funding ready</TableCell>
-                      </TableRow>
-                      <TableRow>
-                        <TableCell className="font-medium">Income Potential</TableCell>
-                        <TableCell>Salary-dependent</TableCell>
-                        <TableCell className="text-green-600 font-medium">IP royalties + equity</TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="text-center bg-gradient-to-r from-blue-600 to-green-600 text-white p-12 rounded-2xl">
-              <h3 className="text-3xl font-bold mb-4">From IP to Impact</h3>
-              <p className="text-xl mb-8 max-w-3xl mx-auto">
-                Your intellectual property becomes the foundation for meaningful ventures that solve real problems and
-                create lasting value in the world.
-              </p>
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100" asChild>
-                <a href="#apply">Start Your Journey</a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Outcomes Section */}
-      <section id="outcomes" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">Student Outcomes</h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                See how DMIF transforms different types of students into successful innovators
-              </p>
-            </div>
-
-            <Tabs defaultValue="indian" className="w-full">
-              <TabsList className="grid w-full grid-cols-3 mb-12">
-                <TabsTrigger value="indian">Indian Students</TabsTrigger>
-                <TabsTrigger value="global">Global Students</TabsTrigger>
-                <TabsTrigger value="immigration">Immigration Seekers</TabsTrigger>
-              </TabsList>
-
-              <TabsContent value="indian">
-                <div className="grid lg:grid-cols-2 gap-12">
-                  <div>
-                    <h3 className="text-2xl font-bold mb-6">Indian Student Success</h3>
-                    <div className="space-y-6">
-                      <Card className="bg-white">
-                        <CardContent className="p-6">
-                          <div className="flex items-center gap-4 mb-4">
-                            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                              <Trophy className="w-6 h-6 text-blue-600" />
-                            </div>
-                            <div>
-                              <h4 className="font-bold">Patent Success</h4>
-                              <p className="text-sm text-gray-600">85% filing success rate</p>
-                            </div>
-                          </div>
-                          <p className="text-gray-600">
-                            Indian students leverage cost advantages and technical skills to build strong IP portfolios
-                          </p>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="bg-white">
-                        <CardContent className="p-6">
-                          <div className="flex items-center gap-4 mb-4">
-                            <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                              <Briefcase className="w-6 h-6 text-green-600" />
-                            </div>
-                            <div>
-                              <h4 className="font-bold">Career Advancement</h4>
-                              <p className="text-sm text-gray-600">3x faster promotions</p>
-                            </div>
-                          </div>
-                          <p className="text-gray-600">
-                            IP credentials lead to senior roles in R&D and innovation departments
-                          </p>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="bg-white">
-                        <CardContent className="p-6">
-                          <div className="flex items-center gap-4 mb-4">
-                            <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                              <Rocket className="w-6 h-6 text-purple-600" />
-                            </div>
-                            <div>
-                              <h4 className="font-bold">Startup Success</h4>
-                              <p className="text-sm text-gray-600">40% launch ventures</p>
-                            </div>
-                          </div>
-                          <p className="text-gray-600">
-                            Strong IP foundation attracts investors and enables successful fundraising
-                          </p>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </div>
-                  <div className="space-y-6">
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="text-center bg-white p-6 rounded-lg">
-                        <div className="text-3xl font-bold text-blue-600">₹12L+</div>
-                        <div className="text-sm text-gray-600">Average salary increase</div>
-                      </div>
-                      <div className="text-center bg-white p-6 rounded-lg">
-                        <div className="text-3xl font-bold text-green-600">200+</div>
-                        <div className="text-sm text-gray-600">Patents filed by alumni</div>
-                      </div>
-                      <div className="text-center bg-white p-6 rounded-lg">
-                        <div className="text-3xl font-bold text-purple-600">50+</div>
-                        <div className="text-sm text-gray-600">Startups launched</div>
-                      </div>
-                      <div className="text-center bg-white p-6 rounded-lg">
-                        <div className="text-3xl font-bold text-orange-600">95%</div>
-                        <div className="text-sm text-gray-600">Job placement rate</div>
-                      </div>
-                    </div>
-                    <img
-                      src="/placeholder.svg?height=300&width=500"
-                      alt="Indian Student Success"
-                      className="rounded-lg w-full"
-                    />
-                  </div>
-                </div>
-              </TabsContent>
-
-              <TabsContent value="global">
-                <div className="grid lg:grid-cols-2 gap-12">
-                  <div>
-                    <h3 className="text-2xl font-bold mb-6">Global Student Impact</h3>
-                    <div className="space-y-6">
-                      <Card className="bg-white">
-                        <CardContent className="p-6">
-                          <div className="flex items-center gap-4 mb-4">
-                            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                              <Globe className="w-6 h-6 text-blue-600" />
-                            </div>
-                            <div>
-                              <h4 className="font-bold">International Recognition</h4>
-                              <p className="text-sm text-gray-600">Published in top conferences</p>
-                            </div>
-                          </div>
-                          <p className="text-gray-600">
-                            Global students gain recognition through IEEE, ACM, and Springer publications
-                          </p>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="bg-white">
-                        <CardContent className="p-6">
-                          <div className="flex items-center gap-4 mb-4">
-                            <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                              <Award className="w-6 h-6 text-green-600" />
-                            </div>
-                            <div>
-                              <h4 className="font-bold">Academic Excellence</h4>
-                              <p className="text-sm text-gray-600">PhD admissions to top universities</p>
-                            </div>
-                          </div>
-                          <p className="text-gray-600">
-                            Research credentials open doors to prestigious graduate programs worldwide
-                          </p>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="bg-white">
-                        <CardContent className="p-6">
-                          <div className="flex items-center gap-4 mb-4">
-                            <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                              <Users className="w-6 h-6 text-purple-600" />
-                            </div>
-                            <div>
-                              <h4 className="font-bold">Industry Connections</h4>
-                              <p className="text-sm text-gray-600">Global mentor network</p>
-                            </div>
-                          </div>
-                          <p className="text-gray-600">
-                            Access to international mentors and industry leaders across continents
-                          </p>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </div>
-                  <div className="space-y-6">
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="text-center bg-white p-6 rounded-lg">
-                        <div className="text-3xl font-bold text-blue-600">25+</div>
-                        <div className="text-sm text-gray-600">Countries represented</div>
-                      </div>
-                      <div className="text-center bg-white p-6 rounded-lg">
-                        <div className="text-3xl font-bold text-green-600">150+</div>
-                        <div className="text-sm text-gray-600">Research publications</div>
-                      </div>
-                      <div className="text-center bg-white p-6 rounded-lg">
-                        <div className="text-3xl font-bold text-purple-600">80%</div>
-                        <div className="text-sm text-gray-600">PhD acceptance rate</div>
-                      </div>
-                      <div className="text-center bg-white p-6 rounded-lg">
-                        <div className="text-3xl font-bold text-orange-600">$75K+</div>
-                        <div className="text-sm text-gray-600">Average starting salary</div>
-                      </div>
-                    </div>
-                    <img
-                      src="/placeholder.svg?height=300&width=500"
-                      alt="Global Student Success"
-                      className="rounded-lg w-full"
-                    />
-                  </div>
-                </div>
-              </TabsContent>
-
-              <TabsContent value="immigration">
-                <div className="grid lg:grid-cols-2 gap-12">
-                  <div>
-                    <h3 className="text-2xl font-bold mb-6">Immigration Success Stories</h3>
-                    <div className="space-y-6">
-                      <Card className="bg-white">
-                        <CardContent className="p-6">
-                          <div className="flex items-center gap-4 mb-4">
-                            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                              <Shield className="w-6 h-6 text-blue-600" />
-                            </div>
-                            <div>
-                              <h4 className="font-bold">Visa Advantages</h4>
-                              <p className="text-sm text-gray-600">EB-1 and O-1 visa eligibility</p>
-                            </div>
-                          </div>
-                          <p className="text-gray-600">
-                            Patent and publication credentials strengthen extraordinary ability visa applications
-                          </p>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="bg-white">
-                        <CardContent className="p-6">
-                          <div className="flex items-center gap-4 mb-4">
-                            <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                              <TrendingUp className="w-6 h-6 text-green-600" />
-                            </div>
-                            <div>
-                              <h4 className="font-bold">Career Acceleration</h4>
-                              <p className="text-sm text-gray-600">Fast-track to senior positions</p>
-                            </div>
-                          </div>
-                          <p className="text-gray-600">
-                            IP credentials bypass entry-level positions and lead directly to innovation roles
-                          </p>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="bg-white">
-                        <CardContent className="p-6">
-                          <div className="flex items-center gap-4 mb-4">
-                            <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                              <GraduationCap className="w-6 h-6 text-purple-600" />
-                            </div>
-                            <div>
-                              <h4 className="font-bold">Academic Pathways</h4>
-                              <p className="text-sm text-gray-600">Direct PhD admissions</p>
-                            </div>
-                          </div>
-                          <p className="text-gray-600">
-                            Research publications enable direct admission to top graduate programs with funding
-                          </p>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </div>
-                  <div className="space-y-6">
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="text-center bg-white p-6 rounded-lg">
-                        <div className="text-3xl font-bold text-blue-600">90%</div>
-                        <div className="text-sm text-gray-600">Visa approval rate</div>
-                      </div>
-                      <div className="text-center bg-white p-6 rounded-lg">
-                        <div className="text-3xl font-bold text-green-600">6 months</div>
-                        <div className="text-sm text-gray-600">Average job placement</div>
-                      </div>
-                      <div className="text-center bg-white p-6 rounded-lg">
-                        <div className="text-3xl font-bold text-purple-600">$85K+</div>
-                        <div className="text-sm text-gray-600">Starting salary in US</div>
-                      </div>
-                      <div className="text-center bg-white p-6 rounded-lg">
-                        <div className="text-3xl font-bold text-orange-600">100%</div>
-                        <div className="text-sm text-gray-600">PhD funding success</div>
-                      </div>
-                    </div>
-                    <img
-                      src="/placeholder.svg?height=300&width=500"
-                      alt="Immigration Success"
-                      className="rounded-lg w-full"
-                    />
-                  </div>
-                </div>
-              </TabsContent>
-            </Tabs>
-          </div>
-        </div>
-      </section>
 
       {/* Testimonials Section */}
       {/* <section id="testimonials" className="py-20 bg-white">
@@ -1099,20 +685,19 @@ export default function DMIFWebsite() {
               </p>
             </div>
 
-            {/* Batch Information */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               <Card className="text-center bg-white">
                 <CardContent className="p-6">
                   <Calendar className="w-12 h-12 mx-auto text-blue-600 mb-4" />
                   <h3 className="font-bold mb-2">Start Date</h3>
-                  <p className="text-gray-600">August 2025</p>
+                  <p className="text-gray-600">September 5 2025</p>
                 </CardContent>
               </Card>
               <Card className="text-center bg-white">
                 <CardContent className="p-6">
                   <Users className="w-12 h-12 mx-auto text-green-600 mb-4" />
                   <h3 className="font-bold mb-2">Seats Available</h3>
-                  <p className="text-gray-600">30 per track</p>
+                  <p className="text-gray-600">Limited Seats</p>
                 </CardContent>
               </Card>
               <Card className="text-center bg-white">
@@ -1379,9 +964,9 @@ export default function DMIFWebsite() {
                 Ready to start your innovation journey? We're here to help you every step of the way.
               </p>
             </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-              <Card className="text-center bg-blue-50 border-blue-200">
+{/* 
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"> */}
+              {/* <Card className="text-center bg-blue-50 border-blue-200">
                 <CardContent className="p-6">
                   <Mail className="w-12 h-12 mx-auto text-blue-600 mb-4" />
                   <h3 className="font-bold mb-2">Email</h3>
@@ -1389,38 +974,9 @@ export default function DMIFWebsite() {
                     reach@drmadhan.in
                   </Link>
                 </CardContent>
-              </Card>
+              </Card> */}
 
-              <Card className="text-center bg-green-50 border-green-200">
-                <CardContent className="p-6">
-                  <Phone className="w-12 h-12 mx-auto text-green-600 mb-4" />
-                  <h3 className="font-bold mb-2">Phone</h3>
-                  <Link href="tel:+919994326696" className="text-green-600 hover:underline">
-                    +91-9994326696
-                  </Link>
-                </CardContent>
-              </Card>
-
-              <Card className="text-center bg-purple-50 border-purple-200">
-                <CardContent className="p-6">
-                  <Globe className="w-12 h-12 mx-auto text-purple-600 mb-4" />
-                  <h3 className="font-bold mb-2">Website</h3>
-                  <Link href="https://www.drmadhan.in" className="text-purple-600 hover:underline">
-                    www.drmadhan.in
-                  </Link>
-                </CardContent>
-              </Card>
-
-              <Card className="text-center bg-orange-50 border-orange-200">
-                <CardContent className="p-6">
-                  <Calendar className="w-12 h-12 mx-auto text-orange-600 mb-4" />
-                  <h3 className="font-bold mb-2">Schedule Call</h3>
-                  <Link href="#" className="text-orange-600 hover:underline">
-                    Book Meeting
-                  </Link>
-                </CardContent>
-              </Card>
-            </div>
+            {/* </div> */}
 
             <div className="grid lg:grid-cols-2 gap-12">
               <div>
@@ -1548,23 +1104,6 @@ export default function DMIFWebsite() {
                   </div>
                 </div>
 
-                <div>
-                  <h4 className="text-xl font-bold mb-4">Office Hours</h4>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span>Monday - Friday:</span>
-                      <span>9:00 AM - 6:00 PM IST</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Saturday:</span>
-                      <span>10:00 AM - 4:00 PM IST</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Sunday:</span>
-                      <span>Closed</span>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -1584,21 +1123,12 @@ export default function DMIFWebsite() {
                   <span className="text-2xl font-bold">DMIF</span>
                 </div>
                 <p className="text-gray-300 mb-6 max-w-md">
-                  Dr. Madhan Institute of Future - Transforming students into inventors and entrepreneurs through
-                  mentorship-based innovation programs.
+                  Dr. Madhan Institute of Future - Powerd by Cognitive & NeuroScience Techniques Active Learning Methodlogy
                 </p>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <Mail className="w-4 h-4" />
                     <span>reach@drmadhan.in</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Phone className="w-4 h-4" />
-                    <span>+91-9994326696</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Globe className="w-4 h-4" />
-                    <span>www.drmadhan.in</span>
                   </div>
                 </div>
               </div>
@@ -1614,16 +1144,6 @@ export default function DMIFWebsite() {
                   <li>
                     <a href="#programs" className="text-gray-300 hover:text-white transition-colors">
                       Programs
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#outcomes" className="text-gray-300 hover:text-white transition-colors">
-                      Student Outcomes
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors">
-                      Success Stories
                     </a>
                   </li>
                   <li>
@@ -1663,7 +1183,7 @@ export default function DMIFWebsite() {
 
             <div className="border-t border-gray-800 pt-8">
               <div className="flex flex-col md:flex-row justify-between items-center">
-                <p className="text-gray-400 text-sm">© 2024 Dr. Madhan Institute of Future. All rights reserved.</p>
+                <p className="text-gray-400 text-sm">© 2025 Dr. Madhan Institute of Future. All rights reserved.</p>
                 <div className="flex space-x-6 mt-4 md:mt-0">
                   <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
                     Privacy Policy

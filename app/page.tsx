@@ -42,6 +42,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { useToast } from "@/hooks/use-toast"
+import TestimonialsPage from "./testimonials/page"
 
 export default function DMIFWebsite() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -72,6 +73,8 @@ export default function DMIFWebsite() {
   const [isSubmittingApplication, setIsSubmittingApplication] = useState(false)
   const { toast } = useToast()
 
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+
   const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmittingContact(true)
@@ -85,20 +88,27 @@ export default function DMIFWebsite() {
         body: JSON.stringify(contactForm),
       })
 
-      if (response.ok) {
-        toast({
-          title: "Message sent successfully!",
-          description: "We'll get back to you within 24 hours.",
-        })
-        setContactForm({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        })
-      } else {
+if (response.ok) {
+  // Show popup instead of toast
+  setShowSuccessPopup(true);
+
+  // Optionally reset form
+  setApplicationForm({
+    fullName: "",
+    email: "",
+    whatsapp: "",
+    country: "",
+    educationLevel: "",
+    fieldOfStudy: "",
+    institution: "",
+    yearOfStudy: "",
+    tracks: [],
+    motivation: "",
+    experience: "",
+    terms: false,
+    updates: false,
+  });
+} else {
         throw new Error("Failed to send message")
       }
     } catch (error) {
@@ -184,6 +194,27 @@ export default function DMIFWebsite() {
 
   return (
     <div className="min-h-screen">
+
+      {/* Success Popup Modal */}
+{showSuccessPopup && (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+    <div className="bg-white rounded-2xl p-8 max-w-sm w-full mx-4 text-center shadow-2xl animate-in slide-in-from-bottom-8 duration-300">
+      <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+        <CheckCircle className="w-8 h-8 text-green-600" />
+      </div>
+      <h3 className="text-2xl font-bold text-gray-900 mb-2">Application Submitted!</h3>
+      <p className="text-gray-600 mb-6">
+        Thank you! Our team will contact you soon.
+      </p>
+      <Button
+        className="w-full"
+        onClick={() => setShowSuccessPopup(false)}
+      >
+        Close
+      </Button>
+    </div>
+  </div>
+)}
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
         <div className="container mx-auto px-4">
@@ -260,6 +291,9 @@ export default function DMIFWebsite() {
           )}
         </div>
       </nav>
+      <section>
+
+      </section>
 
       {/* Hero Section */}
       <section
@@ -671,6 +705,9 @@ export default function DMIFWebsite() {
         </div>
       </section> */}
 
+<section>
+          <TestimonialsPage/>
+</section>
       {/* Apply Section */}
       <section id="apply" className="py-20 bg-gradient-to-br from-blue-50 to-green-50">
         <div className="container mx-auto px-4">
@@ -875,7 +912,7 @@ export default function DMIFWebsite() {
                           Research Track - The Scholarly Explorer ($599)
                         </label>
                       </div>
-                      <div className="flex items-center space-x-2">
+                      {/* <div className="flex items-center space-x-2">
                         <Checkbox
                           id="both-tracks"
                           checked={applicationForm.tracks.includes("both")}
@@ -884,7 +921,7 @@ export default function DMIFWebsite() {
                         <label htmlFor="both-tracks" className="text-sm font-medium leading-none">
                           Both Tracks - Complete Innovation Journey ($1299)
                         </label>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 
